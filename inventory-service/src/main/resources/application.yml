@@ -5,10 +5,9 @@ spring:
   kafka:
     bootstrap-servers: ${KAFKA_BROKER:localhost:9092}
     topic:
-      topic:
-        orchestrator: orchestrator
-        inventory-success: inventory-success
-        inventory-fail: inventory-fail
+      orchestrator: orchestrator
+      inventory-success: inventory-success
+      inventory-fail: inventory-fail
     consumer:
       group-id: inventory-group
       auto-offset-reset: latest
