@@ -1,5 +1,6 @@
 package br.com.microservices.orchestrated.productvalidationservice.core.service;
 
+import br.com.microservices.orchestrated.productvalidationservice.config.exception.ValidationException;
 import br.com.microservices.orchestrated.productvalidationservice.core.dto.Event;
 import br.com.microservices.orchestrated.productvalidationservice.core.dto.History;
 import br.com.microservices.orchestrated.productvalidationservice.core.dto.OrderProduct;
@@ -8,7 +9,6 @@ import br.com.microservices.orchestrated.productvalidationservice.core.producer.
 import br.com.microservices.orchestrated.productvalidationservice.core.repository.ProductRepository;
 import br.com.microservices.orchestrated.productvalidationservice.core.repository.ValidationRepository;
 import br.com.microservices.orchestrated.productvalidationservice.core.utils.JsonUtil;
-import jakarta.validation.ValidationException;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
