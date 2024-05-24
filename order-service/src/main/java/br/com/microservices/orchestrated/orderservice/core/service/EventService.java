@@ -7,12 +7,10 @@ import br.com.microservices.orchestrated.orderservice.core.repository.EventRepos
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-import org.springframework.util.ObjectUtils;
 
 import java.util.List;
-import java.util.Optional;
 
-import static org.springframework.util.ObjectUtils.*;
+import static org.springframework.util.ObjectUtils.isEmpty;
 
 @Slf4j
 @Service
@@ -56,7 +54,7 @@ public class EventService {
   public void validateEmptyFilters(EventFilters eventFilters) {
     if (isEmpty(eventFilters.getOrderId()) &&
             isEmpty(eventFilters.getTransactionId())) {
-      throw  new ValidationException("OrderID or TransactionID must be informed")
+      throw new ValidationException("OrderID or TransactionID must be informed");
     }
 
   }
