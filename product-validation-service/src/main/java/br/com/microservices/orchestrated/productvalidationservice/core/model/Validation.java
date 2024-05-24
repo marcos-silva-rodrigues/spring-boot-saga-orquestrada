@@ -1,4 +1,4 @@
-package br.com.microservices.orchestrated.paymentservice.core.model;
+package br.com.microservices.orchestrated.productvalidationservice.core.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

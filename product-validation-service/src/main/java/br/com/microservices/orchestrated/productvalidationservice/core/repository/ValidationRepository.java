@@ -1,6 +1,6 @@
-package br.com.microservices.orchestrated.paymentservice.core.repository;
+package br.com.microservices.orchestrated.productvalidationservice.core.repository;
 
-import br.com.microservices.orchestrated.paymentservice.core.model.Validation;
+import br.com.microservices.orchestrated.productvalidationservice.core.model.Validation;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
