@@ -42,7 +42,7 @@ public class PaymentService {
       changePaymentToSuccess(payment);
       handleSuccess(event);
     } catch (Exception ex) {
-      log.error("Error trying to make payment: ", ex.getMessage());
+      log.error("Error trying to make payment: ".concat(ex.getMessage()));
       handleFailCurrentNotExecuted(event, ex.getMessage());
     }
 

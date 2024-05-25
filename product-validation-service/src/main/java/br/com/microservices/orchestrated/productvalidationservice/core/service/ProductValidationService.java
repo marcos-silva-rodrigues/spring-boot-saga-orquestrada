@@ -37,7 +37,7 @@ public class ProductValidationService {
       createValidation(event, true);
       handleSuccess(event);
     } catch (RuntimeException ex) {
-      log.error("Error trying to validate products: ", ex);
+      log.error("Error trying to validate products: ".concat(ex.getMessage()));
       handleFailCurrentNotExecuted(event, ex.getMessage());
     }
     producer.sendEvent(jsonUtil.toJson(event));

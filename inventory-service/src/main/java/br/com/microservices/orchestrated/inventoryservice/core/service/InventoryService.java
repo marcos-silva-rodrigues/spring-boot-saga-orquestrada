@@ -38,7 +38,7 @@ public class InventoryService {
       updateInventory(event.getPayload());
       handleSuccess(event);
     } catch (Exception ex) {
-      log.error("Error trying to update inventory: ", ex.getMessage());
+      log.error("Error trying to update inventory: ".concat(ex.getMessage()));
       handleFailCurrentNotExecuted(event, ex.getMessage());
     }
 
@@ -111,7 +111,7 @@ public class InventoryService {
       });
   }
 
-  private void checkInventory(int orderQuantity, int available) {
+  private void checkInventory(int available, int orderQuantity ) {
     if (orderQuantity > available) {
       throw new ValidationException("Product is out of stock!");
     }
