@@ -10,6 +10,7 @@ public enum ETopics {
   START_SAGA("start-saga"),
   BASE_ORCHESTRATOR("orchestrator"),
   FINISH_SUCCESS("finish-success"),
+  FINISH_FAIL("finish-fail"),
   PRODUCT_VALIDATION_SUCCESS("product-validation-success"),
   PRODUCT_VALIDATION_FAIL("product-validation-fail"),
   PAYMENT_SUCCESS("payment-success"),
@@ -19,5 +20,5 @@ public enum ETopics {
   NOTIFY_ENDING("notify-ending");
 
 
-  private String topic;
+  private final String topic;
 }
