@@ -1,7 +1,7 @@
 # Sobre
 
 Este projeto é um estudo do curso da udemy sobre Padrão Saga Orquestrado ministrado pelo [Victor Hugo](https://www.udemy.com/user/victor-hugo-negrisoli/),
-disponivel [neste link][https://www.udemy.com/course/arquitetura-de-microsservicos-padrao-saga-orquestrado/?couponCode=ST8MT101424](https://www.udemy.com/course/arquitetura-de-microsservicos-padrao-saga-orquestrado)
+disponivel [neste link](https://www.udemy.com/course/arquitetura-de-microsservicos-padrao-saga-orquestrado)
 
 Aonde foi discutido assuntos sobre:
 + Arquitetura assíncrona
